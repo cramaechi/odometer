@@ -17,12 +17,12 @@ void output(Odometer& o);
 
 int main()
 {
-	Odometer o;
-    
+    Odometer o;
+
     input(o);
     output(o);
 
-	return 0;
+    return 0;
 }
 
 void input(Odometer& o)
@@ -34,7 +34,7 @@ void input(Odometer& o)
     float miles;
     cin>>miles;
     o.addMileage(miles);
-    
+
     cout<<endl;
 
     cout<<"What is the fuel efficiency of your car (in mpg)? ";
@@ -46,10 +46,10 @@ void input(Odometer& o)
 
 void output(Odometer& o)
 {
-	cout.setf(ios::showpoint);
-	cout.setf(ios::fixed);
-	cout.precision(2);
+    cout.setf(ios::showpoint);
+    cout.setf(ios::fixed);
+    cout.precision(2);
 
     float gallons = o.getGallonsConsumed();
-	cout<<"The gallons of gasoline consumed by your car is : "<<gallons<<endl;
+    cout<<"The gallons of gasoline consumed by your car is : "<<gallons<<endl;
 }
