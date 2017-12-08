@@ -7,8 +7,6 @@
 
 using namespace std;
 
-const int NUMBER_OF_ODOMETERS = 10;
-
 void input(Odometer& o);
 //Postcondition: Array o is filled with size Odometer objects.
 
